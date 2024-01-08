@@ -23,7 +23,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	scroll-behavior: smooth;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -76,6 +77,7 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
+		scroll-behavior: smooth;
 	}
 
 	*, *:before, *:after {
@@ -1654,12 +1656,27 @@ input, select, textarea {
 		.button.alt {
 			background: #252122;
 		}
+		input[type="button"].alt2,
+		input[type="submit"].alt2,
+		input[type="reset"].alt2,
+		button.alt2,
+		.button.alt2{
+			background: #7289da;
+		}
 
 			input[type="button"].alt:hover,
 			input[type="submit"].alt:hover,
 			input[type="reset"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
+				background: #353132;
+			}
+
+			input[type="button"].alt2:hover,
+			input[type="submit"].alt2:hover,
+			input[type="reset"].alt2:hover,
+			button.alt2:hover,
+			.button.alt2:hover {
 				background: #353132;
 			}
 
@@ -2466,6 +2483,7 @@ input, select, textarea {
 
 			html, body {
 				overflow-x: hidden;
+				scroll-behavior: smooth;
 			}
 
 		/* Box */
